@@ -37,11 +37,15 @@ npx playwright show-report
 #### Setting up environment
 
 ```bash
+export USERNAME=${USERNAME}
+export PASSWORD=${PASSWORD}
 export APPLITOOLS_API_KEY=${YOUR_APPLITOOLS_API_KEY}
 ```
 
 where:
 
+- `${USERNAME}` is your Vetlog username
+- `${PASSWORD}` is your Vetlog password
 - `${YOUR_APPLITOOLS_API_KEY}` is something like: `Ag4hfEVDIMykuCpWk61ppg3VJ9fkK0uht100HXnvGPlag220` (Check with your service provider if you do not have it)
 
 **Note**
