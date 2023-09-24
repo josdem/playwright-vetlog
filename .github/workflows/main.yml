@@ -24,9 +24,9 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright visual tests
-      run: npx playwright test --project chromium
+      run: npx playwright test visual --project chromium
     - name: Run Playwright e2e tests
-      run: npx playwright e2e
+      run: npx playwright test e2e
     - uses: actions/upload-artifact@v3
       if: always()
       with:
