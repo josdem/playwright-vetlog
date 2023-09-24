@@ -1,6 +1,13 @@
 import { test, expect } from "@playwright/test"
 import { Constants } from "../properties/test.properties"
 
+test.beforeAll(async () => {
+    test.info().annotations.push({
+        type: 'story',
+        description: 'https://github.com/josdem/vetlog-spring-boot/wiki/US3',
+    });
+})
+
 test("should login as a user", async ({ page }) => {
     await page.goto(Constants.URL)
     await page.getByRole('link', { name: /Login/ }).first().click()
