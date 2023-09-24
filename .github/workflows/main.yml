@@ -5,7 +5,9 @@ on:
   pull_request:
     branches: [ main ]
   schedule:
-    - cron:  '0 21 * * *'  
+    - cron:  '0 21 * * *'
+env:
+  APPLITOOLS_API_KEY: ${{ secrets.APPLITOOLS_API_KEY }}
 jobs:
   test:
     timeout-minutes: 60
