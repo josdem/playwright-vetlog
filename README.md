@@ -16,10 +16,16 @@ This is an end-to-end testing for [Vetlog](https://vetlog.org/)
 npm install
 ```
 
-#### To run the project
+#### To run end-to-end tests
 
 ```bash
-npx playwright test --project chromium
+npx playwright test e2e
+```
+
+#### To run visual tests
+
+```bash
+npx playwright test e2e --project chromium
 ```
 
 #### To see integrated reports
