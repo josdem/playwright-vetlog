@@ -1,8 +1,8 @@
-## Playwright Workshop
+## Playwright Vetlog
 
-[![Playwright](https://img.shields.io/badge/playwright-reports-brightgreen.svg)](https://playwright.dev/)
+[![Playwright](https://img.shields.io/badge/playwright-tests-brightgreen.svg)](https://github.com/josdem/playwright-vetlog/actions)
 
-This is an end-to-end testing for [Vetlog](https://vetlog.org/)
+This is an end-to-end testing for [Vetlog](https://vetlog.org/) using [Playwright](https://playwright.dev/) and [Applitools](https://applitools.com/)
 
 #### Requirements
 
