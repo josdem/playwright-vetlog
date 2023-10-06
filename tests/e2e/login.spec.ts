@@ -8,8 +8,8 @@ test.beforeAll(async () => {
     });
     test.info().annotations.push({
         type: 'time',
-        description: `${new Date()}`
-    }
+        description: `${new Date()}`,
+    });
 })
 
 test("should login as a user", async ({ page }) => {
