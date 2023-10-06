@@ -6,6 +6,10 @@ test.beforeAll(async () => {
         type: 'story',
         description: 'https://github.com/josdem/vetlog-spring-boot/wiki/US3',
     });
+    test.info().annotations.push({
+        type: 'time',
+        description: `${new Date()}`,
+    });
 })
 
 test("should login as a user", async ({ page }) => {
