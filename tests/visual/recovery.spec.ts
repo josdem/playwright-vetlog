@@ -11,9 +11,9 @@ test.beforeEach(async ({ page }) => {
 })
 
 test("should validate recovery password page", async ({ page }) => {
-  await page.goto(Constants.URL)
-  await expect(page).toHaveTitle(Constants.HOME_TITLE)
-  await applitools.checkWindowEyes("Home Page")
+  await page.goto(Constants.RECOVERY_URL)
+  await expect(page).toHaveTitle(Constants.RECOVERY_TITLE)
+  await applitools.checkWindowEyes("Recovery password page")
 })
 
 test.afterEach(async () => {
