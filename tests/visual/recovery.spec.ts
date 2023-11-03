@@ -14,6 +14,7 @@ test("should validate recovery password page", async ({ page }) => {
   await page.goto(Constants.RECOVERY_URL)
   await expect(page).toHaveTitle(Constants.RECOVERY_TITLE)
   await page.getByPlaceholder(/email/).fill(Constants.EMAIL)
+  await page.getByRole('button', { name: "SUBMIT" }).click()
   await applitools.checkWindowEyes("Recovery password page")
 })
 
