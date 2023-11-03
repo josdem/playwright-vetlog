@@ -1,6 +1,5 @@
 import { test, expect } from "@playwright/test"
-import { LoginPage } from "../pages/login.page";
-import { Constants } from "../properties/test.properties"
+import { LoginPage } from "../pages/login.page"
 
 test.beforeAll(async () => {
     test.info().annotations.push({
