@@ -7,4 +7,6 @@ export class Constants {
     static readonly LOGIN_TITLE = "Login"
     static readonly APP = "Vetlog"
     static readonly BATCH_NAME = "Playwright - Vetlog"
+    static readonly EMAIL = "joseluis.delacruz@gmail.com"
+
 }
