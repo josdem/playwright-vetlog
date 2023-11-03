@@ -10,7 +10,7 @@ test.beforeEach(async ({ page }) => {
   await applitools.setUpTest(page, Constants.APP, test.info().title)
 })
 
-test("should validate home page", async ({ page }) => {
+test("should validate recovery password page", async ({ page }) => {
   await page.goto(Constants.URL)
   await expect(page).toHaveTitle(Constants.HOME_TITLE)
   await applitools.checkWindowEyes("Home Page")
