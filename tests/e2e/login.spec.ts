@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test"
+import { LoginPage } from "../pages/login.page";
 import { Constants } from "../properties/test.properties"
 
 test.beforeAll(async () => {
@@ -13,11 +14,7 @@ test.beforeAll(async () => {
 })
 
 test("should login as a user", async ({ page }) => {
-    await page.goto(Constants.URL)
-    await page.getByRole('link', { name: /Login/ }).first().click()
-    await expect(page).toHaveTitle(Constants.LOGIN_TITLE)
-    await page.getByPlaceholder(/username/).fill(`${process.env.USERNAME}`)
-    await page.getByPlaceholder(/password/).fill(`${process.env.PASSWORD}`)
-    await page.getByRole('button', { name: /Login/ }).click()
+    let loginPage = new LoginPage(page)
+    await loginPage.login()
     await expect(page.getByRole('link', { name: /Logout/ }).first()).toBeVisible()
 })

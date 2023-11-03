@@ -10,8 +10,8 @@ export class LoginPage {
 
     async login() {
         await this.page.goto(Constants.LOGIN_URL)
-        await this.page.getByPlaceholder(/username/).fill(`${process.env.USERNAME}`)
-        await this.page.getByPlaceholder(/password/).fill(`${process.env.PASSWORD}`)
+        await this.page.getByPlaceholder(/username/).fill(`${process.env.VETLOG_USERNAME}`)
+        await this.page.getByPlaceholder(/password/).fill(`${process.env.VETLOG_PASSWORD}`)
         await this.page.getByRole('button', { name: /Login/ }).click()
     }
 

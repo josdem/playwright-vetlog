@@ -37,8 +37,8 @@ npx playwright show-report
 #### Setting up environment
 
 ```bash
-export USERNAME=${USERNAME}
-export PASSWORD=${PASSWORD}
+export VETLOG_USERNAME=${USERNAME}
+export VETLOG_PASSWORD=${PASSWORD}
 export APPLITOOLS_API_KEY=${YOUR_APPLITOOLS_API_KEY}
 ```
 
