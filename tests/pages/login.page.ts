@@ -1,0 +1,18 @@
+import { Page } from "@playwright/test"
+import { Constants } from "../properties/test.properties"
+
+export class LoginPage {
+    protected readonly page: Page;
+
+    constructor(page: Page) {
+        this.page = page
+      }
+
+    async login() {
+        await this.page.goto(Constants.LOGIN_URL)
+        await this.page.getByPlaceholder(/username/).fill(`${process.env.USERNAME}`)
+        await this.page.getByPlaceholder(/password/).fill(`${process.env.PASSWORD}`)
+        await this.page.getByRole('button', { name: /Login/ }).click()
+    }
+
+}
