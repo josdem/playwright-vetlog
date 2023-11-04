@@ -10,6 +10,7 @@ export default defineConfig({
   timeout: 60000,
   use: {
     trace: 'on-first-retry',
+    video: "retain-on-failure"
   },
 
   projects: [
