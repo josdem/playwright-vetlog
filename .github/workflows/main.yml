@@ -9,8 +9,8 @@ on:
     - cron:  '0 21 * * *'
 env:
   APPLITOOLS_API_KEY: ${{ secrets.APPLITOOLS_API_KEY }}
-  USERNAME: ${{ secrets.VETLOG_USERNAME }}
-  PASSWORD: ${{ secrets.VETLOG_PASSWORD }}
+  VETLOG_USERNAME: ${{ secrets.VETLOG_USERNAME }}
+  VETLOG_PASSWORD: ${{ secrets.VETLOG_PASSWORD }}
 jobs:
   test:
     timeout-minutes: 60
