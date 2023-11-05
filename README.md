@@ -25,7 +25,7 @@ npx playwright test e2e
 #### To run visual tests
 
 ```bash
-npx playwright test e2e --project chromium
+npx playwright test visual --project chromium
 ```
 
 #### To see integrated reports
