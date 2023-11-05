@@ -59,3 +59,5 @@ $Env:APPLITOOLS_API_KEY="YOUR_APPLITOOLS_API_KEY"
 where:
 
 - `${apiKey}` Is your Applitools api key
+
+[Reporters Wiki](https://github.com/josdem/playwright-vetlog/wiki#reporters)
