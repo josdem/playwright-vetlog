@@ -1,0 +1,219 @@
+{
+  "config": {
+    "configFile": "/home/josdem/Projects/playwright-vetlog/playwright.config.ts",
+    "rootDir": "/home/josdem/Projects/playwright-vetlog/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 3
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/home/josdem/Projects/playwright-vetlog/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/josdem/Projects/playwright-vetlog/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/home/josdem/Projects/playwright-vetlog/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/home/josdem/Projects/playwright-vetlog/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/home/josdem/Projects/playwright-vetlog/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/home/josdem/Projects/playwright-vetlog/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.38.1",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "e2e/login.spec.ts",
+      "file": "e2e/login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "should login as a user",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "story",
+                  "description": "https://github.com/josdem/vetlog-spring-boot/wiki/US3"
+                },
+                {
+                  "type": "time",
+                  "description": "Sun Nov 05 2023 08:58:06 GMT-0500 (Eastern Standard Time)"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1516,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-05T13:58:06.820Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "537b83cfbdf14afda252-7379944dde893aa85444",
+          "file": "e2e/login.spec.ts",
+          "line": 15,
+          "column": 5
+        },
+        {
+          "title": "should login as a user",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "story",
+                  "description": "https://github.com/josdem/vetlog-spring-boot/wiki/US3"
+                },
+                {
+                  "type": "time",
+                  "description": "Sun Nov 05 2023 08:58:06 GMT-0500 (Eastern Standard Time)"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 3087,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-05T13:58:06.821Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "537b83cfbdf14afda252-effb6b89f0935814af16",
+          "file": "e2e/login.spec.ts",
+          "line": 15,
+          "column": 5
+        },
+        {
+          "title": "should login as a user",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "story",
+                  "description": "https://github.com/josdem/vetlog-spring-boot/wiki/US3"
+                },
+                {
+                  "type": "time",
+                  "description": "Sun Nov 05 2023 08:58:06 GMT-0500 (Eastern Standard Time)"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 3082,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-05T13:58:06.832Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "537b83cfbdf14afda252-1e80d655bff7de3b3c9d",
+          "file": "e2e/login.spec.ts",
+          "line": 15,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
