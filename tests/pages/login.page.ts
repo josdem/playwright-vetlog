@@ -8,7 +8,7 @@ export class LoginPage {
         this.page = page
       }
 
-    async login() {
+    async login() : Promise<void> {
         await this.page.goto(Constants.LOGIN_URL)
         await this.page.getByPlaceholder(/username/).fill(`${process.env.VETLOG_USERNAME}`)
         await this.page.getByPlaceholder(/password/).fill(`${process.env.VETLOG_PASSWORD}`)

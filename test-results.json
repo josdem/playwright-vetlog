@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 3
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -80,13 +80,13 @@
   },
   "suites": [
     {
-      "title": "visual\\home.spec.ts",
-      "file": "visual/home.spec.ts",
+      "title": "visual\\list.spec.ts",
+      "file": "visual/list.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "should validate home page",
+          "title": "should list my pets",
           "ok": true,
           "tags": [],
           "tests": [
@@ -100,143 +100,25 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 41372,
+                  "duration": 28641,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Visual test results TestResultsSummaryData {\n  _summary: {\n    results: [ \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m ],\n    passed: \u001b[33m6\u001b[39m,\n    unresolved: \u001b[33m0\u001b[39m,\n    failed: \u001b[33m0\u001b[39m,\n    exceptions: \u001b[33m0\u001b[39m,\n    mismatches: \u001b[33m0\u001b[39m,\n    missing: \u001b[33m0\u001b[39m,\n    matches: \u001b[33m6\u001b[39m\n  },\n  _core: {\n    openEyes: \u001b[36m[AsyncFunction: openEyes]\u001b[39m,\n    openFunctionalSession: \u001b[36m[AsyncFunction: openFunctionalSession]\u001b[39m,\n    locate: \u001b[36m[AsyncFunction: locate]\u001b[39m,\n    locateText: \u001b[36m[AsyncFunction: locateText]\u001b[39m,\n    extractText: \u001b[36m[AsyncFunction: extractText]\u001b[39m,\n    closeBatch: \u001b[36m[AsyncFunction: closeBatch]\u001b[39m,\n    deleteTest: \u001b[36m[AsyncFunction: deleteTest]\u001b[39m,\n    getAccountInfo: \u001b[36m[AsyncFunction: getAccountInfo]\u001b[39m,\n    logEvent: \u001b[36m[AsyncFunction: logEvent]\u001b[39m,\n    base: {\n      openEyes: \u001b[36m[AsyncFunction: openEyes]\u001b[39m,\n      openFunctionalSession: \u001b[36m[AsyncFunction: openFunctionalSession]\u001b[39m,\n      locate: \u001b[36m[AsyncFunction: locate]\u001b[39m,\n      locateText: \u001b[36m[AsyncFunction: locateText]\u001b[39m,\n      extractText: \u001b[36m[AsyncFunction: extractText]\u001b[39m,\n      closeBatch: \u001b[36m[AsyncFunction: closeBatch]\u001b[39m,\n      deleteTest: \u001b[36m[AsyncFunction: deleteTest]\u001b[39m,\n      getAccountInfo: \u001b[36m[Function]\u001b[39m,\n      logEvent: \u001b[36m[AsyncFunction: logEvent]\u001b[39m\n    },\n    getViewportSize: \u001b[36m[AsyncFunction: getViewportSize]\u001b[39m,\n    setViewportSize: \u001b[36m[AsyncFunction: setViewportSize]\u001b[39m,\n    getNMLClient: [Function: funcWithCache] {\n      clearCache: \u001b[36m[Function (anonymous)]\u001b[39m,\n      getCachedValues: \u001b[36m[Function (anonymous)]\u001b[39m,\n      setCachedValue: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    getECClient: [Function: funcWithCache] {\n      clearCache: \u001b[36m[Function (anonymous)]\u001b[39m,\n      getCachedValues: \u001b[36m[Function (anonymous)]\u001b[39m,\n      setCachedValue: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    makeManager: \u001b[36m[AsyncFunction: makeManager]\u001b[39m\n  }\n}\n"
+                      "text": "Visual test results TestResultsSummaryData {\n  _summary: {\n    results: [ \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m ],\n    passed: \u001b[33m6\u001b[39m,\n    unresolved: \u001b[33m0\u001b[39m,\n    failed: \u001b[33m0\u001b[39m,\n    exceptions: \u001b[33m0\u001b[39m,\n    mismatches: \u001b[33m0\u001b[39m,\n    missing: \u001b[33m0\u001b[39m,\n    matches: \u001b[33m0\u001b[39m\n  },\n  _core: {\n    openEyes: \u001b[36m[AsyncFunction: openEyes]\u001b[39m,\n    openFunctionalSession: \u001b[36m[AsyncFunction: openFunctionalSession]\u001b[39m,\n    locate: \u001b[36m[AsyncFunction: locate]\u001b[39m,\n    locateText: \u001b[36m[AsyncFunction: locateText]\u001b[39m,\n    extractText: \u001b[36m[AsyncFunction: extractText]\u001b[39m,\n    closeBatch: \u001b[36m[AsyncFunction: closeBatch]\u001b[39m,\n    deleteTest: \u001b[36m[AsyncFunction: deleteTest]\u001b[39m,\n    getAccountInfo: \u001b[36m[AsyncFunction: getAccountInfo]\u001b[39m,\n    logEvent: \u001b[36m[AsyncFunction: logEvent]\u001b[39m,\n    base: {\n      openEyes: \u001b[36m[AsyncFunction: openEyes]\u001b[39m,\n      openFunctionalSession: \u001b[36m[AsyncFunction: openFunctionalSession]\u001b[39m,\n      locate: \u001b[36m[AsyncFunction: locate]\u001b[39m,\n      locateText: \u001b[36m[AsyncFunction: locateText]\u001b[39m,\n      extractText: \u001b[36m[AsyncFunction: extractText]\u001b[39m,\n      closeBatch: \u001b[36m[AsyncFunction: closeBatch]\u001b[39m,\n      deleteTest: \u001b[36m[AsyncFunction: deleteTest]\u001b[39m,\n      getAccountInfo: \u001b[36m[Function]\u001b[39m,\n      logEvent: \u001b[36m[AsyncFunction: logEvent]\u001b[39m\n    },\n    getViewportSize: \u001b[36m[AsyncFunction: getViewportSize]\u001b[39m,\n    setViewportSize: \u001b[36m[AsyncFunction: setViewportSize]\u001b[39m,\n    getNMLClient: [Function: funcWithCache] {\n      clearCache: \u001b[36m[Function (anonymous)]\u001b[39m,\n      getCachedValues: \u001b[36m[Function (anonymous)]\u001b[39m,\n      setCachedValue: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    getECClient: [Function: funcWithCache] {\n      clearCache: \u001b[36m[Function (anonymous)]\u001b[39m,\n      getCachedValues: \u001b[36m[Function (anonymous)]\u001b[39m,\n      setCachedValue: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    makeManager: \u001b[36m[AsyncFunction: makeManager]\u001b[39m\n  }\n}\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-11-05T17:23:32.970Z",
+                  "startTime": "2023-11-05T17:34:41.886Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
-            }
-          ],
-          "id": "0ad38f7592fcc18e4d90-bfe34cd57f88dba40fe2",
-          "file": "visual/home.spec.ts",
-          "line": 13,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "visual\\list.spec.ts",
-      "file": "visual/list.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "should list my pets",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "failed",
-                  "duration": 6585,
-                  "error": {
-                    "message": "locator.click: Error: strict mode violation: getByRole('link', { name: 'LIST' }) resolved to 2 elements:\n    1) <a href=\"/pet/list\" class=\"page-scroll\">…</a> aka locator('#bs-example-navbar-collapse-1').getByRole('link', { name: 'List' })\n    2) <a href=\"/pet/list\">…</a> aka getByRole('contentinfo').getByRole('link', { name: 'List' })\n\n=========================== logs ===========================\nwaiting for getByRole('link', { name: 'LIST' })\n============================================================",
-                    "stack": "Error: locator.click: Error: strict mode violation: getByRole('link', { name: 'LIST' }) resolved to 2 elements:\n    1) <a href=\"/pet/list\" class=\"page-scroll\">…</a> aka locator('#bs-example-navbar-collapse-1').getByRole('link', { name: 'List' })\n    2) <a href=\"/pet/list\">…</a> aka getByRole('contentinfo').getByRole('link', { name: 'List' })\n\n=========================== logs ===========================\nwaiting for getByRole('link', { name: 'LIST' })\n============================================================\n    at C:\\Users\\conta\\Projects\\playwright-vetlog\\tests\\visual\\list.spec.ts:18:50",
-                    "location": {
-                      "file": "C:\\Users\\conta\\Projects\\playwright-vetlog\\tests\\visual\\list.spec.ts",
-                      "column": 50,
-                      "line": 18
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 16 |\u001b[39m   \u001b[36mlet\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m   \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"LIST\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m   \u001b[36mawait\u001b[39m applitools\u001b[33m.\u001b[39mcheckWindowEyes(\u001b[32m\"List pets page\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\conta\\Projects\\playwright-vetlog\\tests\\visual\\list.spec.ts",
-                        "column": 50,
-                        "line": 18
-                      },
-                      "message": "Error: locator.click: Error: strict mode violation: getByRole('link', { name: 'LIST' }) resolved to 2 elements:\n    1) <a href=\"/pet/list\" class=\"page-scroll\">…</a> aka locator('#bs-example-navbar-collapse-1').getByRole('link', { name: 'List' })\n    2) <a href=\"/pet/list\">…</a> aka getByRole('contentinfo').getByRole('link', { name: 'List' })\n\n=========================== logs ===========================\nwaiting for getByRole('link', { name: 'LIST' })\n============================================================\n\n\u001b[0m \u001b[90m 16 |\u001b[39m   \u001b[36mlet\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m   \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"LIST\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m   \u001b[36mawait\u001b[39m applitools\u001b[33m.\u001b[39mcheckWindowEyes(\u001b[32m\"List pets page\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\conta\\Projects\\playwright-vetlog\\tests\\visual\\list.spec.ts:18:50\u001b[22m"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "Visual test results TestResultsSummaryData {\n  _summary: {\n    results: [],\n    passed: \u001b[33m0\u001b[39m,\n    unresolved: \u001b[33m0\u001b[39m,\n    failed: \u001b[33m0\u001b[39m,\n    exceptions: \u001b[33m0\u001b[39m,\n    mismatches: \u001b[33m0\u001b[39m,\n    missing: \u001b[33m0\u001b[39m,\n    matches: \u001b[33m0\u001b[39m\n  },\n  _core: {\n    openEyes: \u001b[36m[AsyncFunction: openEyes]\u001b[39m,\n    openFunctionalSession: \u001b[36m[AsyncFunction: openFunctionalSession]\u001b[39m,\n    locate: \u001b[36m[AsyncFunction: locate]\u001b[39m,\n    locateText: \u001b[36m[AsyncFunction: locateText]\u001b[39m,\n    extractText: \u001b[36m[AsyncFunction: extractText]\u001b[39m,\n    closeBatch: \u001b[36m[AsyncFunction: closeBatch]\u001b[39m,\n    deleteTest: \u001b[36m[AsyncFunction: deleteTest]\u001b[39m,\n    getAccountInfo: \u001b[36m[AsyncFunction: getAccountInfo]\u001b[39m,\n    logEvent: \u001b[36m[AsyncFunction: logEvent]\u001b[39m,\n    base: {\n      openEyes: \u001b[36m[AsyncFunction: openEyes]\u001b[39m,\n      openFunctionalSession: \u001b[36m[AsyncFunction: openFunctionalSession]\u001b[39m,\n      locate: \u001b[36m[AsyncFunction: locate]\u001b[39m,\n      locateText: \u001b[36m[AsyncFunction: locateText]\u001b[39m,\n      extractText: \u001b[36m[AsyncFunction: extractText]\u001b[39m,\n      closeBatch: \u001b[36m[AsyncFunction: closeBatch]\u001b[39m,\n      deleteTest: \u001b[36m[AsyncFunction: deleteTest]\u001b[39m,\n      getAccountInfo: \u001b[36m[Function]\u001b[39m,\n      logEvent: \u001b[36m[AsyncFunction: logEvent]\u001b[39m\n    },\n    getViewportSize: \u001b[36m[AsyncFunction: getViewportSize]\u001b[39m,\n    setViewportSize: \u001b[36m[AsyncFunction: setViewportSize]\u001b[39m,\n    getNMLClient: [Function: funcWithCache] {\n      clearCache: \u001b[36m[Function (anonymous)]\u001b[39m,\n      getCachedValues: \u001b[36m[Function (anonymous)]\u001b[39m,\n      setCachedValue: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    getECClient: [Function: funcWithCache] {\n      clearCache: \u001b[36m[Function (anonymous)]\u001b[39m,\n      getCachedValues: \u001b[36m[Function (anonymous)]\u001b[39m,\n      setCachedValue: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    makeManager: \u001b[36m[AsyncFunction: makeManager]\u001b[39m\n  }\n}\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-11-05T17:23:32.970Z",
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\conta\\Projects\\playwright-vetlog\\test-results\\visual-list-should-list-my-pets-chromium\\video.webm"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\conta\\Projects\\playwright-vetlog\\tests\\visual\\list.spec.ts",
-                    "column": 50,
-                    "line": 18
-                  }
-                }
-              ],
-              "status": "unexpected"
             }
           ],
           "id": "f7c4a72a347b1466da4d-68435e227f42dabc5d6f",
           "file": "visual/list.spec.ts",
-          "line": 15,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "visual\\recovery.spec.ts",
-      "file": "visual/recovery.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "should validate recovery password page",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 2,
-                  "status": "passed",
-                  "duration": 31578,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Visual test results TestResultsSummaryData {\n  _summary: {\n    results: [ \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m ],\n    passed: \u001b[33m6\u001b[39m,\n    unresolved: \u001b[33m0\u001b[39m,\n    failed: \u001b[33m0\u001b[39m,\n    exceptions: \u001b[33m0\u001b[39m,\n    mismatches: \u001b[33m0\u001b[39m,\n    missing: \u001b[33m0\u001b[39m,\n    matches: \u001b[33m6\u001b[39m\n  },\n  _core: {\n    openEyes: \u001b[36m[AsyncFunction: openEyes]\u001b[39m,\n    openFunctionalSession: \u001b[36m[AsyncFunction: openFunctionalSession]\u001b[39m,\n    locate: \u001b[36m[AsyncFunction: locate]\u001b[39m,\n    locateText: \u001b[36m[AsyncFunction: locateText]\u001b[39m,\n    extractText: \u001b[36m[AsyncFunction: extractText]\u001b[39m,\n    closeBatch: \u001b[36m[AsyncFunction: closeBatch]\u001b[39m,\n    deleteTest: \u001b[36m[AsyncFunction: deleteTest]\u001b[39m,\n    getAccountInfo: \u001b[36m[AsyncFunction: getAccountInfo]\u001b[39m,\n    logEvent: \u001b[36m[AsyncFunction: logEvent]\u001b[39m,\n    base: {\n      openEyes: \u001b[36m[AsyncFunction: openEyes]\u001b[39m,\n      openFunctionalSession: \u001b[36m[AsyncFunction: openFunctionalSession]\u001b[39m,\n      locate: \u001b[36m[AsyncFunction: locate]\u001b[39m,\n      locateText: \u001b[36m[AsyncFunction: locateText]\u001b[39m,\n      extractText: \u001b[36m[AsyncFunction: extractText]\u001b[39m,\n      closeBatch: \u001b[36m[AsyncFunction: closeBatch]\u001b[39m,\n      deleteTest: \u001b[36m[AsyncFunction: deleteTest]\u001b[39m,\n      getAccountInfo: \u001b[36m[Function]\u001b[39m,\n      logEvent: \u001b[36m[AsyncFunction: logEvent]\u001b[39m\n    },\n    getViewportSize: \u001b[36m[AsyncFunction: getViewportSize]\u001b[39m,\n    setViewportSize: \u001b[36m[AsyncFunction: setViewportSize]\u001b[39m,\n    getNMLClient: [Function: funcWithCache] {\n      clearCache: \u001b[36m[Function (anonymous)]\u001b[39m,\n      getCachedValues: \u001b[36m[Function (anonymous)]\u001b[39m,\n      setCachedValue: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    getECClient: [Function: funcWithCache] {\n      clearCache: \u001b[36m[Function (anonymous)]\u001b[39m,\n      getCachedValues: \u001b[36m[Function (anonymous)]\u001b[39m,\n      setCachedValue: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    makeManager: \u001b[36m[AsyncFunction: makeManager]\u001b[39m\n  }\n}\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-11-05T17:23:32.970Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "f849309416e4a05862bc-ea8a5d9fc66bffbb3dab",
-          "file": "visual/recovery.spec.ts",
-          "line": 13,
+          "line": 19,
           "column": 5
         }
       ]

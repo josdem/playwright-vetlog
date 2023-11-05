@@ -1,8 +1,10 @@
-import { test, expect } from "@playwright/test"
+import { test, expect, Page } from "@playwright/test"
 import { Constants } from "../properties/test.properties"
 import { LoginPage } from "../pages/login.page"
 
 import applitools from "../utils/applitools.util"
+
+let page: Page
 
 test.beforeAll(async () => {
   applitools.setUpConfiguration(Constants.BATCH_NAME)
@@ -10,12 +12,12 @@ test.beforeAll(async () => {
 
 test.beforeEach(async ({ page }) => {
   await applitools.setUpTest(page, Constants.APP, test.info().title)
+  let loginPage = new LoginPage(page)
+  await loginPage.login()
 })
 
 test("should list my pets", async ({ page }) => {
-  let loginPage = new LoginPage(page)
-  await loginPage.login()
-  await page.getByRole('link', { name: "LIST" }).click()
+  await page.getByRole('link', { name: "LIST" }).first().click()
   await applitools.checkWindowEyes("List pets page")
 })
 
