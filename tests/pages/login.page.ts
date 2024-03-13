@@ -1,5 +1,5 @@
 import { Page } from "@playwright/test"
-import { Constants } from "../properties/test.properties"
+import { Constants } from "../properties/test.constants"
 
 export class LoginPage {
     protected readonly page: Page;

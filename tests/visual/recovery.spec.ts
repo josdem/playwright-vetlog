@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test"
-import { Constants } from "../properties/test.properties"
+import { Constants } from "../properties/test.constants"
+import testData from "../properties/data.json"
 import applitools from "../utils/applitools.util"
 
 test.beforeAll(async () => {
@@ -12,8 +13,8 @@ test.beforeEach(async ({ page }) => {
 
 test("should validate recovery password page", async ({ page }) => {
   await page.goto(Constants.RECOVERY_URL)
-  await expect(page).toHaveTitle(Constants.RECOVERY_TITLE)
-  await page.getByPlaceholder(/email/).fill(Constants.EMAIL)
+  await expect(page).toHaveTitle(testData.recoveryTitle)
+  await page.getByPlaceholder(/email/).fill(testData.email)
   await page.getByRole('button', { name: "SUBMIT" }).click()
   await applitools.checkWindowEyes("Recovery password page")
 })

@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test"
-import { Constants } from "../properties/test.properties"
+import { Constants } from "../properties/test.constants"
+import testData from "../properties/data.json"
 import applitools from "../utils/applitools.util"
 
 test.beforeAll(async () => {
@@ -12,7 +13,7 @@ test.beforeEach(async ({ page }) => {
 
 test("should validate home page", async ({ page }) => {
   await page.goto(Constants.HOME_URL)
-  await expect(page).toHaveTitle(Constants.HOME_TITLE)
+  await expect(page).toHaveTitle(testData.homeTitle)
   await applitools.checkWindowEyes("Home Page")
 })
 

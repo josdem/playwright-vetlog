@@ -1,5 +1,5 @@
-import { test, expect, Page } from "@playwright/test"
-import { Constants } from "../properties/test.properties"
+import { test, Page } from "@playwright/test"
+import { Constants } from "../properties/test.constants"
 import { LoginPage } from "../pages/login.page"
 
 import applitools from "../utils/applitools.util"
