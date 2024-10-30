@@ -51,6 +51,7 @@ $Env:VETLOG_PASSWORD="VetlogPassword"
 ```
 
 #### To format the project
+
 ```bash
 npx prettier --write .
 ```
