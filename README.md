@@ -50,4 +50,9 @@ $Env:VETLOG_USERNAME="VetlogUser"
 $Env:VETLOG_PASSWORD="VetlogPassword"
 ```
 
+#### To format the project
+```bash
+npx prettier --write .
+```
+
 [Reporters Wiki](https://github.com/josdem/playwright-vetlog/wiki#reporters)
