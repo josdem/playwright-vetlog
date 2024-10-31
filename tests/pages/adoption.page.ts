@@ -10,6 +10,6 @@ export class AdoptionPage {
 
   async list(): Promise<void> {
     await this.page.goto(Constants.HOME_URL)
-    await this.page.getByRole("link", { name: "DO IT NOW!" }).click()
+    await this.page.getByTestId("listForAdoption").click()
   }
 }
