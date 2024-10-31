@@ -1,11 +1,11 @@
 {
   "name": "playwright-vetlog",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "Visual and End-to-End testing for Vetlog",
   "main": "index.js",
   "scripts": {},
   "keywords": [],
-  "author": "",
+  "author": "josdem<contact@josdem.io>",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.48.2",
