@@ -1,30 +1,27 @@
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig, devices } from "@playwright/test"
 
 export default defineConfig({
-  testDir: './tests',
+  testDir: "./tests",
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
-  reporter: [
-    ['html'],
-    ['json', {  outputFile: 'test-results.json' }]
-  ],
+  reporter: [["html"], ["json", { outputFile: "test-results.json" }]],
   timeout: 60000,
   use: {
-    trace: 'on-first-retry',
-    video: "retain-on-failure"
+    trace: "on-first-retry",
+    video: "retain-on-failure",
   },
 
   projects: [
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      name: "chromium",
+      use: { ...devices["Desktop Chrome"] },
     },
 
     {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+      name: "firefox",
+      use: { ...devices["Desktop Firefox"] },
     },
   ],
-});
+})
