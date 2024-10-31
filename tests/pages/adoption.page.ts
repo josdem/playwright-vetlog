@@ -1,4 +1,4 @@
-import { Page } from "@playwright/test"
+import { Locator, Page } from "@playwright/test"
 import { Constants } from "../properties/test.constants"
 
 export class AdoptionPage {
@@ -13,5 +13,9 @@ export class AdoptionPage {
     let element = this.page.getByTestId("listForAdoption")
     await element.scrollIntoViewIfNeeded()
     await element.click()
+  }
+
+  async getPetName(): Promise<Locator> {
+    return this.page.getByTestId("petName")
   }
 }
