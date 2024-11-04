@@ -28,6 +28,14 @@ npx playwright test e2e
 npx playwright show-report
 ```
 
+```bash
+npx playwright test tests/e2e/${test-file-name}
+```
+
+Where:
+
+- `${test-file-name}` is the spec you want to run
+
 #### Setting up environment
 
 ```bash
