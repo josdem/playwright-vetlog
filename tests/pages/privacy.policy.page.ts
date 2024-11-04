@@ -14,4 +14,12 @@ export class PrivacyPolicyPage {
   getCollectTitle() {
     return this.page.getByRole("heading", { name: "Information We Collect" })
   }
+
+  getUseTitle() {
+    return this.page.getByRole("heading", { name: "Use of Your Information" })
+  }
+
+  getDisclosureTitle() {
+    return this.page.getByRole("heading", { name: "Disclosure of Your Information" })
+  }
 }

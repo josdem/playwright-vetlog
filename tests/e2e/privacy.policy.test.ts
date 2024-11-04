@@ -21,4 +21,6 @@ test("should view privacy policy", async ({ page }) => {
   await expect(page).toHaveTitle(data.privacyPolicyTitle)
   await expect(privacyPolicyPage.getWelcomeTitle()).toBeVisible()
   await expect(privacyPolicyPage.getCollectTitle()).toBeVisible()
+  await expect(privacyPolicyPage.getUseTitle()).toBeVisible()
+  await expect(privacyPolicyPage.getDisclosureTitle()).toBeVisible()
 })
