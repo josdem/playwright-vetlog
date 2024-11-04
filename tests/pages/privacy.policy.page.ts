@@ -22,4 +22,8 @@ export class PrivacyPolicyPage {
   getDisclosureTitle() {
     return this.page.getByRole("heading", { name: "Disclosure of Your Information" })
   }
+
+  getSecurityTitle() {
+    return this.page.getByRole("heading", { name: "Security of Your Information" })
+  }
 }
