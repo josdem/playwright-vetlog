@@ -10,4 +10,8 @@ export class PrivacyPolicyPage {
   async getWelcomeTitle(): Promise<Locator> {
     return this.page.getByRole("heading", { name: "Welcome to Vetlog Privacy Policy" })
   }
+
+  async getCollectTitle(): Promise<Locator> {
+    return this.page.getByRole("heading", { name: "Information we Collect" })
+  }
 }

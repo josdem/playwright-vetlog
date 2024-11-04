@@ -19,5 +19,6 @@ test("should view privacy policy", async ({ page }) => {
   let privacyPolicyPage = new PrivacyPolicyPage(page)
   await homePage.clickOnPrivacyPolicy()
   await expect(page).toHaveTitle(data.privacyPolicyTitle)
-  expect(privacyPolicyPage.getWelcomeTitle).toBeDefined()
+  expect(privacyPolicyPage.getWelcomeTitle()).toBeDefined()
+  expect(privacyPolicyPage.getCollectTitle()).toBeDefined()
 })
