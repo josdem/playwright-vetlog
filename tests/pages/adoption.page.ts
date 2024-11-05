@@ -15,31 +15,31 @@ export class AdoptionPage {
     await element.click()
   }
 
-  async getPetName(): Promise<Locator> {
+  getPetName() {
     return this.page.getByTestId("petName")
   }
 
-  async getPetBirthdate(): Promise<Locator> {
+  getPetBirthdate() {
     return this.page.getByTestId("petBirhdate")
   }
 
-  async getPetBreed(): Promise<Locator> {
+  getPetBreed() {
     return this.page.getByTestId("petBreed")
   }
 
-  async getPetDeworming(): Promise<Locator> {
+  getPetDeworming() {
     return this.page.getByTestId("petDeworming")
   }
 
-  async getPetSterilized(): Promise<Locator> {
+  getPetSterilized() {
     return this.page.getByTestId("petSterilized")
   }
 
-  async getPetVaccinated(): Promise<Locator> {
+  getPetVaccinated() {
     return this.page.getByTestId("petVaccinated")
   }
 
-  async getPetAdoptionDescription(): Promise<Locator> {
+  getPetAdoptionDescription() {
     return this.page.getByTestId("petAdoptionDescription")
   }
 }
