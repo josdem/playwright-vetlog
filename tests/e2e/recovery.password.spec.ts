@@ -17,4 +17,5 @@ test("should validate recovery password page", async ({ page }) => {
   let recoveryPage = new RecoveryPage(page)
   recoveryPage.submitEmail()
   await expect(page).toHaveTitle(data.loginTitle)
+  await expect(recoveryPage.getMessage()).toBeVisible()
 })

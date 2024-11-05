@@ -14,4 +14,8 @@ export class RecoveryPage {
     await this.page.getByPlaceholder(/email/).fill(data.email)
     await this.page.getByRole("button", { name: "SUBMIT" }).click()
   }
+
+  getMessage() {
+    return this.page.getByTestId("recoveryPasswordMessage")
+  }
 }
