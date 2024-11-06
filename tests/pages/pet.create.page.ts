@@ -10,6 +10,6 @@ export class PetCreatePage {
 
   async fillPetData(): Promise<void> {
     await this.page.getByPlaceholder(/name/).fill(data.petName)
-    await this.page.getByLabel("birth date").fill(data.petBirthDate)
+    await this.page.getByTestId("birthDate").fill(data.petBirthDate)
   }
 }
