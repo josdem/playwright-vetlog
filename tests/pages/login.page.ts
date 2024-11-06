@@ -1,5 +1,5 @@
 import { Page } from "@playwright/test"
-import { Constants } from "../properties/test.constants"
+import { Authenticator } from "../utils/authenticator"
 
 export class LoginPage {
   protected readonly page: Page
@@ -9,9 +9,7 @@ export class LoginPage {
   }
 
   async login(): Promise<void> {
-    await this.page.goto(Constants.LOGIN_URL)
-    await this.page.getByPlaceholder(/username/).fill(`${process.env.VETLOG_USERNAME}`)
-    await this.page.getByPlaceholder(/password/).fill(`${process.env.VETLOG_PASSWORD}`)
-    await this.page.getByRole("button", { name: "LOGIN" }).click()
+    let authenticator = new Authenticator(this.page)
+    authenticator.login(`${process.env.VETLOG_USERNAME}`, `${process.env.VETLOG_PASSWORD}`)
   }
 }

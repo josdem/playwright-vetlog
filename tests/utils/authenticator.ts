@@ -1,7 +1,7 @@
 import { Page } from "@playwright/test"
 import { Constants } from "../properties/test.constants"
 
-export class Login {
+export class Authenticator {
   protected readonly page: Page
 
   constructor(page: Page) {
