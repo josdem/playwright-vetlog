@@ -8,7 +8,7 @@ export class PetCreatePage {
     this.page = page
   }
 
-  async fillPetData(name: string): Promise<void> {
+  async fillPetData(): Promise<void> {
     await this.page.getByPlaceholder(/name/).fill(data.petName)
     await this.page.getByLabel("birth date").fill(data.petBirthDate)
   }
