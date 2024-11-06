@@ -14,4 +14,10 @@ export class HomePage {
     await element.scrollIntoViewIfNeeded()
     await element.click()
   }
+
+  async clickOnRegisterPet(): Promise<void> {
+    await this.page.goto(Constants.HOME_URL)
+    let element = this.page.getByRole("link", { name: "Register a Pet" })
+    await element.click()
+  }
 }
