@@ -23,4 +23,5 @@ test("should registrer a pet", async ({ page }) => {
   await homePage.clickOnRegisterPet()
   await expect(page).toHaveTitle(data.petCreateTitle)
   await petCreatePage.fillPetData()
+  await expect(petCreatePage.getMessage()).toBeVisible()
 })

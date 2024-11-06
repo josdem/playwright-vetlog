@@ -10,6 +10,11 @@ export class PetCreatePage {
 
   async fillPetData(): Promise<void> {
     await this.page.getByPlaceholder(/name/).fill(data.petName)
-    await this.page.getByTestId("birthDate").fill(data.petBirthDate)
+    await this.page.getByTestId("birthDate").click()
+    await this.page.getByRole("button", { name: "SUBMIT" }).click()
+  }
+
+  getMessage() {
+    return this.page.getByTestId("petRegistered")
   }
 }
