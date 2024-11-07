@@ -19,4 +19,9 @@ export class HomePage {
     let element = this.page.getByRole("link", { name: "Register a Pet" })
     await element.click()
   }
+
+  async clickOnListPets(): Promise<void> {
+    let element = this.page.getByRole("link", { name: "List" })
+    await element.first().click()
+  }
 }
