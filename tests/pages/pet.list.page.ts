@@ -16,4 +16,8 @@ export class PetListPage {
     let element = this.page.getByTestId("petDeleteModal")
     await element.click()
   }
+
+  getMessage() {
+    return this.page.getByTestId("petListMessage")
+  }
 }
