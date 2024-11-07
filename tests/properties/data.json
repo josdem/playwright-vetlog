@@ -4,6 +4,7 @@
   "loginTitle": "Login",
   "privacyPolicyTitle": "Privacy Policy",
   "petCreateTitle": "Register a Pet",
-  "email": "joseluis.delacruz@gmail.com",
+  "petListTitle": "Listing pets",
+  "email": "contact@josdem.io",
   "petName": "Spooky"
 }
