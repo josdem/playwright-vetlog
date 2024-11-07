@@ -1,4 +1,4 @@
-import { Locator, Page } from "@playwright/test"
+import { Page } from "@playwright/test"
 import { Constants } from "../properties/test.constants"
 
 export class AdoptionPage {

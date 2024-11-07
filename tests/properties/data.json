@@ -3,5 +3,7 @@
   "adoptionTitle": "Listing pets",
   "loginTitle": "Login",
   "privacyPolicyTitle": "Privacy Policy",
-  "email": "joseluis.delacruz@gmail.com"
+  "petCreateTitle": "Register a Pet",
+  "email": "joseluis.delacruz@gmail.com",
+  "petName": "Spooky"
 }
