@@ -2,6 +2,7 @@ import { test, expect, Page } from "@playwright/test"
 import { Authenticator } from "../utils/authenticator"
 import { HomePage } from "../pages/home.page"
 import { PetCreatePage } from "../pages/pet.create.page"
+import { PetListPage } from "../pages/pet.list.page"
 import { Constants } from "../properties/test.constants"
 import data from "../properties/data.json"
 
@@ -39,7 +40,9 @@ test("should registrer a pet", async () => {
 })
 
 test("should delete a pet", async () => {
+  let petListPage = new PetListPage(page)
   await page.goto(Constants.HOME_URL)
   await homePage.clickOnListPets()
   await expect(page).toHaveTitle(data.petListTitle)
+  await petListPage.clickOnDeleteButton()
 })
