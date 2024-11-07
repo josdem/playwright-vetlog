@@ -45,5 +45,6 @@ test("should delete a pet", async () => {
   await homePage.clickOnListPets()
   await expect(page).toHaveTitle(data.petListTitle)
   await petListPage.clickOnDeleteButton()
+  await petListPage.clickOnDeleteModal()
   await expect(petListPage.getMessage()).toBeVisible()
 })
