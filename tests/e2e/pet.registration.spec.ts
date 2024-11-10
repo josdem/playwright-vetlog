@@ -5,7 +5,6 @@ import { PetCreatePage } from "../pages/pet.create.page"
 import { PetListPage } from "../pages/pet.list.page"
 import { Constants } from "../properties/test.constants"
 import data from "../properties/data.json"
-import { time } from "console"
 
 test.describe.configure({ mode: "serial" })
 
