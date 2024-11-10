@@ -9,7 +9,7 @@ export class LoginPage {
   }
 
   async login(): Promise<void> {
-    let authenticator = new Authenticator(this.page)
+    const authenticator = new Authenticator(this.page)
     authenticator.login(`${process.env.VETLOG_USERNAME}`, `${process.env.VETLOG_PASSWORD}`)
   }
 }

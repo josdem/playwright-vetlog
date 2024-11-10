@@ -10,7 +10,7 @@ export class AdoptionPage {
 
   async list(): Promise<void> {
     await this.page.goto(Constants.HOME_URL)
-    let element = this.page.getByTestId("listForAdoption")
+    const element = this.page.getByTestId("listForAdoption")
     await element.scrollIntoViewIfNeeded()
     await element.click()
   }

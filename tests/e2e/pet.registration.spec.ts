@@ -42,7 +42,7 @@ test("should registrer a pet", async () => {
 })
 
 test("should delete a pet", async () => {
-  let petListPage = new PetListPage(page)
+  const petListPage = new PetListPage(page)
   await page.goto(Constants.HOME_URL)
   await homePage.clickOnListPets()
   await expect(page).toHaveTitle(data.petListTitle, { timeout: WAITING_TIME })
