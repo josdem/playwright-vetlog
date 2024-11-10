@@ -4,7 +4,8 @@
   "description": "Visual and End-to-End testing for Vetlog",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "keywords": [],
   "author": "josdem<contact@josdem.io>",
