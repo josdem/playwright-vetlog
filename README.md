@@ -6,7 +6,7 @@ This is an end-to-end testing for [Vetlog](https://vetlog.org/) using [Playwrigh
 
 #### Requirements
 
-- [NodeJS](https://nodejs.org/en/) version `v18.20.4`
+- [NodeJS](https://nodejs.org/en/) version `v22.11.0`
 
 **Note:** I recommed to use [NVM](https://github.com/nvm-sh/nvm) to manage NodeJS versions
 
