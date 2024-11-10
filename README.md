@@ -94,7 +94,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/ahmedhalac"><img src="https://avatars.githubusercontent.com/u/38500014?v=4?s=100" width="100px;" alt="Ahmed Halac"/><br /><sub><b>Ahmed Halac</b></sub></a><br /><a href="https://github.com/josdem/playwright-vetlog/commits?author=ahmedhalac" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/ahmedhalac"><img src="https://avatars.githubusercontent.com/u/38500014?v=4?s=100" width="100px;" alt="Ahmed Halac"/><br /><sub><b>Ahmed Halac</b></sub></a><br /><a href="https://github.com/josdem/playwright-vetlog/commits?author=ahmedhalac" title="Code">💻</a> <a href="#infra-ahmedhalac" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     </tr>
   </tbody>
 </table>
