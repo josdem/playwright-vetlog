@@ -61,7 +61,7 @@ $Env:VETLOG_USERNAME="VetlogUser"
 $Env:VETLOG_PASSWORD="VetlogPassword"
 ```
 
-### Linting and Code Formatting
+#### Linting and Code Formatting
 
 To format the project:
 
