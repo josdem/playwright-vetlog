@@ -13,7 +13,7 @@ test.beforeAll(async () => {
 })
 
 test("should login as a user", async ({ page }) => {
-  let loginPage = new LoginPage(page)
+  const loginPage = new LoginPage(page)
   await loginPage.login()
   await expect(page.getByRole("link", { name: /Logout/ }).first()).toBeVisible()
 })

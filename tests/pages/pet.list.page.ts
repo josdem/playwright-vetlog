@@ -8,12 +8,12 @@ export class PetListPage {
   }
 
   async clickOnDeleteButton(): Promise<void> {
-    let element = this.page.getByTestId("petDeleteButton")
+    const element = this.page.getByTestId("petDeleteButton")
     await element.click()
   }
 
   async clickOnDeleteModal(): Promise<void> {
-    let element = this.page.getByTestId("petDeleteModal")
+    const element = this.page.getByTestId("petDeleteModal")
     await element.click()
   }
 

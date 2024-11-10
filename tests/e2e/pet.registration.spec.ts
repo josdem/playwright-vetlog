@@ -5,7 +5,6 @@ import { PetCreatePage } from "../pages/pet.create.page"
 import { PetListPage } from "../pages/pet.list.page"
 import { Constants } from "../properties/test.constants"
 import data from "../properties/data.json"
-import { time } from "console"
 
 test.describe.configure({ mode: "serial" })
 
@@ -42,7 +41,7 @@ test("should registrer a pet", async () => {
 })
 
 test("should delete a pet", async () => {
-  let petListPage = new PetListPage(page)
+  const petListPage = new PetListPage(page)
   await page.goto(Constants.HOME_URL)
   await homePage.clickOnListPets()
   await expect(page).toHaveTitle(data.petListTitle, { timeout: WAITING_TIME })

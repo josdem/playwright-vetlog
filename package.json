@@ -1,6 +1,6 @@
 {
   "name": "playwright-vetlog",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Visual and End-to-End testing for Vetlog",
   "main": "index.js",
   "scripts": {
