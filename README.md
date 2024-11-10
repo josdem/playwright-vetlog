@@ -61,11 +61,26 @@ $Env:VETLOG_USERNAME="VetlogUser"
 $Env:VETLOG_PASSWORD="VetlogPassword"
 ```
 
-#### To format the project
+### Linting and Code Formatting
+
+To format the project:
 
 ```bash
 npx prettier --write .
 ```
+
+To check for linting issues:
+
+```bash
+npm run lint
+```
+
+To automatically fix linting issues:
+
+```bash
+npm run lint:fix
+```
+
 
 [Reporters Wiki](https://github.com/josdem/playwright-vetlog/wiki#reporters)
 
