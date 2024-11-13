@@ -17,6 +17,26 @@ export class PetListPage {
     await element.click()
   }
 
+  getPetName() {
+    return this.page.getByTestId("petName")
+  }
+
+  getPetBreed() {
+    return this.page.getByTestId("petBreed")
+  }
+
+  getPetDeworming() {
+    return this.page.getByTestId("petDeworming")
+  }
+
+  getPetSterilized() {
+    return this.page.getByTestId("petSterilized")
+  }
+
+  getPetVaccinated() {
+    return this.page.getByTestId("petVaccinated")
+  }
+
   getMessage() {
     return this.page.getByTestId("petListMessage")
   }
