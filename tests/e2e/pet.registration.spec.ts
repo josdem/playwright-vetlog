@@ -5,7 +5,6 @@ import { PetCreatePage } from "../pages/pet.create.page"
 import { PetListPage } from "../pages/pet.list.page"
 import { Constants } from "../properties/test.constants"
 import data from "../properties/data.json"
-import { time } from "console"
 
 test.describe.configure({ mode: "serial" })
 
@@ -22,6 +21,10 @@ test.beforeAll(async ({ browser }) => {
   test.info().annotations.push({
     type: "story",
     description: "https://github.com/josdem/vetlog-spring-boot/wiki/US15",
+  })
+  test.info().annotations.push({
+    type: "story",
+    description: "https://github.com/josdem/vetlog-spring-boot/wiki/US7",
   })
   test.info().annotations.push({
     type: "time",
@@ -41,8 +44,20 @@ test("should registrer a pet", async () => {
   await expect(petCreatePage.getMessage()).toBeVisible()
 })
 
+test("should validate pet details are visible in user's pet list", async () => {
+  const petListPage = new PetListPage(page)
+  await page.goto(Constants.HOME_URL)
+  await homePage.clickOnListPets()
+  await expect(page).toHaveTitle(data.petListTitle)
+  await expect(petListPage.getPetName().first()).toBeVisible()
+  await expect(petListPage.getPetBreed().first()).toBeVisible()
+  await expect(petListPage.getPetDeworming().first()).toBeVisible()
+  await expect(petListPage.getPetSterilized().first()).toBeVisible()
+  await expect(petListPage.getPetVaccinated().first()).toBeVisible()
+})
+
 test("should delete a pet", async () => {
-  let petListPage = new PetListPage(page)
+  const petListPage = new PetListPage(page)
   await page.goto(Constants.HOME_URL)
   await homePage.clickOnListPets()
   await expect(page).toHaveTitle(data.petListTitle, { timeout: WAITING_TIME })

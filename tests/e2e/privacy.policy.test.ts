@@ -15,8 +15,8 @@ test.beforeAll(async () => {
 })
 
 test("should view privacy policy", async ({ page }) => {
-  let homePage = new HomePage(page)
-  let privacyPolicyPage = new PrivacyPolicyPage(page)
+  const homePage = new HomePage(page)
+  const privacyPolicyPage = new PrivacyPolicyPage(page)
   await homePage.clickOnPrivacyPolicy()
   await expect(page).toHaveTitle(data.privacyPolicyTitle)
   await expect(privacyPolicyPage.getWelcomeTitle()).toBeVisible()

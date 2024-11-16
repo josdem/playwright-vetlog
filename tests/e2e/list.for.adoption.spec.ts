@@ -14,7 +14,7 @@ test.beforeAll(async () => {
 })
 
 test("should list all pets in adoption status", async ({ page }) => {
-  let adoptionPage = new AdoptionPage(page)
+  const adoptionPage = new AdoptionPage(page)
   await adoptionPage.list()
   await expect(page).toHaveTitle(data.adoptionTitle)
   await expect(adoptionPage.getPetName().first()).toBeVisible()

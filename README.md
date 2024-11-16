@@ -1,6 +1,9 @@
 ## Playwright Vetlog
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Playwright](https://img.shields.io/badge/playwright-tests-brightgreen.svg)](https://github.com/josdem/playwright-vetlog/actions)
@@ -9,7 +12,7 @@ This is an end-to-end testing for [Vetlog](https://vetlog.org/) using [Playwrigh
 
 #### Requirements
 
-- [NodeJS](https://nodejs.org/en/) version `v18.20.4`
+- [NodeJS](https://nodejs.org/en/) version `v22.11.0`
 
 **Note:** I recommed to use [NVM](https://github.com/nvm-sh/nvm) to manage NodeJS versions
 
@@ -61,10 +64,24 @@ $Env:VETLOG_USERNAME="VetlogUser"
 $Env:VETLOG_PASSWORD="VetlogPassword"
 ```
 
-#### To format the project
+#### Linting and Code Formatting
+
+To format the project:
 
 ```bash
 npx prettier --write .
+```
+
+To check for linting issues:
+
+```bash
+npm run lint
+```
+
+To automatically fix linting issues:
+
+```bash
+npm run lint:fix
 ```
 
 [Reporters Wiki](https://github.com/josdem/playwright-vetlog/wiki#reporters)

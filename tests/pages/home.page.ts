@@ -10,18 +10,18 @@ export class HomePage {
 
   async clickOnPrivacyPolicy(): Promise<void> {
     await this.page.goto(Constants.HOME_URL)
-    let element = this.page.getByRole("link", { name: "Privacy Policy" })
+    const element = this.page.getByRole("link", { name: "Privacy Policy" })
     await element.scrollIntoViewIfNeeded()
     await element.click()
   }
 
   async clickOnRegisterPet(): Promise<void> {
-    let element = this.page.getByRole("link", { name: "Register a Pet" })
+    const element = this.page.getByRole("link", { name: "Register a Pet" })
     await element.click()
   }
 
   async clickOnListPets(): Promise<void> {
-    let element = this.page.getByRole("link", { name: "List" })
+    const element = this.page.getByRole("link", { name: "List" })
     await element.first().click()
   }
 }
