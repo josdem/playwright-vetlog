@@ -23,6 +23,10 @@ test.beforeAll(async ({ browser }) => {
     description: "https://github.com/josdem/vetlog-spring-boot/wiki/US15",
   })
   test.info().annotations.push({
+    type: "story",
+    description: "https://github.com/josdem/vetlog-spring-boot/wiki/US7",
+  })
+  test.info().annotations.push({
     type: "time",
     description: `${new Date()}`,
   })
@@ -38,6 +42,18 @@ test("should registrer a pet", async () => {
   await expect(page).toHaveTitle(data.petCreateTitle, { timeout: WAITING_TIME })
   await petCreatePage.fillPetData()
   await expect(petCreatePage.getMessage()).toBeVisible()
+})
+
+test("should validate pet details are visible in user's pet list", async () => {
+  const petListPage = new PetListPage(page)
+  await page.goto(Constants.HOME_URL)
+  await homePage.clickOnListPets()
+  await expect(page).toHaveTitle(data.petListTitle)
+  await expect(petListPage.getPetName().first()).toBeVisible()
+  await expect(petListPage.getPetBreed().first()).toBeVisible()
+  await expect(petListPage.getPetDeworming().first()).toBeVisible()
+  await expect(petListPage.getPetSterilized().first()).toBeVisible()
+  await expect(petListPage.getPetVaccinated().first()).toBeVisible()
 })
 
 test("should delete a pet", async () => {
