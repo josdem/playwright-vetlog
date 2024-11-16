@@ -10,7 +10,11 @@
       "name": "Ahmed Halac",
       "avatar_url": "https://avatars.githubusercontent.com/u/38500014?v=4",
       "profile": "https://github.com/ahmedhalac",
-      "contributions": ["code", "infra"]
+      "contributions": [
+        "code",
+        "infra",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
