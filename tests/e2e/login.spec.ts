@@ -18,6 +18,12 @@ test("should not login due wrong username", async ({ page }) => {
   await expect(page.getByTestId("loginErrorMessage")).toBeVisible()
 })
 
+test("should not login due wrong password", async ({ page }) => {
+  const loginPage = new LoginPage(page)
+  await loginPage.login(`${process.env.VETLOG_USERNAME}`, "wrongPassword")
+  await expect(page.getByTestId("loginErrorMessage")).toBeVisible()
+})
+
 test("should login as a user", async ({ page }) => {
   const loginPage = new LoginPage(page)
   await loginPage.login(`${process.env.VETLOG_USERNAME}`, `${process.env.VETLOG_PASSWORD}`)
