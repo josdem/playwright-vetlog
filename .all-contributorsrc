@@ -1,5 +1,7 @@
 {
-  "files": ["README.md"],
+  "files": [
+    "README.md"
+  ],
   "imageSize": 100,
   "commit": false,
   "commitType": "docs",
@@ -13,6 +15,15 @@
       "contributions": [
         "code",
         "infra",
+        "review"
+      ]
+    },
+    {
+      "login": "kaminuma",
+      "name": "T.H(kaminuma)",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33448874?v=4",
+      "profile": "https://github.com/kaminuma",
+      "contributions": [
         "review"
       ]
     }
