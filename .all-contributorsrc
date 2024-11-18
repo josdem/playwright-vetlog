@@ -12,11 +12,7 @@
       "name": "Ahmed Halac",
       "avatar_url": "https://avatars.githubusercontent.com/u/38500014?v=4",
       "profile": "https://github.com/ahmedhalac",
-      "contributions": [
-        "code",
-        "infra",
-        "review"
-      ]
+      "contributions": ["code", "infra", "review"]
     },
     {
       "login": "kaminuma",
