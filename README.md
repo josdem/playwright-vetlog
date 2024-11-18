@@ -1,9 +1,7 @@
 ## Playwright Vetlog
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Playwright](https://img.shields.io/badge/playwright-tests-brightgreen.svg)](https://github.com/josdem/playwright-vetlog/actions)
@@ -97,6 +95,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/ahmedhalac"><img src="https://avatars.githubusercontent.com/u/38500014?v=4?s=100" width="100px;" alt="Ahmed Halac"/><br /><sub><b>Ahmed Halac</b></sub></a><br /><a href="https://github.com/josdem/playwright-vetlog/commits?author=ahmedhalac" title="Code">💻</a> <a href="#infra-ahmedhalac" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/josdem/playwright-vetlog/pulls?q=is%3Apr+reviewed-by%3Aahmedhalac" title="Reviewed Pull Requests">👀</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/kaminuma"><img src="https://avatars.githubusercontent.com/u/33448874?v=4?s=100" width="100px;" alt="T.H(kaminuma)"/><br /><sub><b>T.H(kaminuma)</b></sub></a><br /><a href="https://github.com/josdem/playwright-vetlog/pulls?q=is%3Apr+reviewed-by%3Akaminuma" title="Reviewed Pull Requests">👀</a></td>
     </tr>
   </tbody>
 </table>
