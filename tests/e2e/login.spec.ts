@@ -12,8 +12,14 @@ test.beforeAll(async () => {
   })
 })
 
+test("should not login due wrong username", async ({ page }) => {
+  const loginPage = new LoginPage(page)
+  await loginPage.login("wrongUsername", `${process.env.VETLOG_PASSWORD}`)
+  await expect(page.getByTestId("loginErrorMessage")).toBeVisible()
+})
+
 test("should login as a user", async ({ page }) => {
   const loginPage = new LoginPage(page)
-  await loginPage.login()
+  await loginPage.login(`${process.env.VETLOG_USERNAME}`, `${process.env.VETLOG_PASSWORD}`)
   await expect(page.getByRole("link", { name: /Logout/ }).first()).toBeVisible()
 })
