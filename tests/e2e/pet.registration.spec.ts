@@ -51,7 +51,7 @@ test("should validate pet details are visible in user's pet list", async () => {
   await expect(page).toHaveTitle(data.petListTitle)
   await expect(petListPage.getPetName().first()).toBeVisible()
   await expect(petListPage.getPetBreed().first()).toBeVisible()
-  await expect(petListPage.getPetDeworming().first()).toBeVisible()
+  await expect(petListPage.getPetDewormed().first()).toBeVisible()
   await expect(petListPage.getPetSterilized().first()).toBeVisible()
   await expect(petListPage.getPetVaccinated().first()).toBeVisible()
 })
