@@ -29,8 +29,8 @@ export class PetListPage {
     return this.page.getByTestId("petBreed")
   }
 
-  getPetDeworming() {
-    return this.page.getByTestId("petDeworming")
+  getPetDewormed() {
+    return this.page.getByTestId("petDewormed")
   }
 
   getPetSterilized() {

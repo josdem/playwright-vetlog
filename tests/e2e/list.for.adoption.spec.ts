@@ -20,7 +20,7 @@ test("should list all pets in adoption status", async ({ page }) => {
   await expect(adoptionPage.getPetName().first()).toBeVisible()
   await expect(adoptionPage.getPetBirthdate().first()).toBeVisible()
   await expect(adoptionPage.getPetBreed().first()).toBeVisible()
-  await expect(adoptionPage.getPetDeworming().first()).toBeVisible()
+  await expect(adoptionPage.getPetDewormed().first()).toBeVisible()
   await expect(adoptionPage.getPetSterilized().first()).toBeVisible()
   await expect(adoptionPage.getPetVaccinated().first()).toBeVisible()
   await expect(adoptionPage.getPetAdoptionDescription().first()).toBeVisible()

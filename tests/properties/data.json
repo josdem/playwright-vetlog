@@ -4,8 +4,9 @@
   "loginTitle": "Login",
   "privacyPolicyTitle": "Privacy Policy",
   "petCreateTitle": "Register a Pet",
+  "userRegistrationTitle": "Create User",
   "petListTitle": "Listing pets",
   "email": "contact@josdem.io",
-  "mobile": "123456789",
+  "mobile": "1234567890",
   "petName": "Spooky"
 }
