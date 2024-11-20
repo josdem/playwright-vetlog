@@ -61,7 +61,7 @@ test("should update a pet", async () => {
   const petListPage = new PetListPage(page)
   const petEditPage = new PetEditPage(page)
   await petListPage.clickOnEditButton()
-  await expect(page).toHaveTitle(data.petListTitle, { timeout: WAITING_TIME })
+  await expect(page).toHaveTitle(data.petEditTitle, { timeout: WAITING_TIME })
   await petEditPage.changePetData()
   await expect(petEditPage.getMessage()).toBeVisible()
 })
