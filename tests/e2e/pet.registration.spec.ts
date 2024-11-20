@@ -11,6 +11,7 @@ test.describe.configure({ mode: "serial" })
 
 let page: Page
 let homePage: HomePage
+let petListPage: PetListPage
 let authenticator: Authenticator
 const WAITING_TIME = 10000
 
@@ -33,6 +34,7 @@ test.beforeAll(async ({ browser }) => {
   })
   page = await browser.newPage()
   homePage = new HomePage(page)
+  petListPage = new PetListPage(page)
   authenticator = new Authenticator(page)
   authenticator.login(`${process.env.VETLOG_USERNAME}`, `${process.env.VETLOG_PASSWORD}`)
 })
@@ -46,7 +48,6 @@ test("should registrer a pet", async () => {
 })
 
 test("should validate pet details are visible in user's pet list", async () => {
-  const petListPage = new PetListPage(page)
   await page.goto(Constants.HOME_URL)
   await homePage.clickOnListPets()
   await expect(page).toHaveTitle(data.petListTitle)
@@ -58,7 +59,6 @@ test("should validate pet details are visible in user's pet list", async () => {
 })
 
 test("should update a pet", async () => {
-  const petListPage = new PetListPage(page)
   const petEditPage = new PetEditPage(page)
   await petListPage.clickOnEditButton()
   await expect(page).toHaveTitle(data.petEditTitle, { timeout: WAITING_TIME })
@@ -67,7 +67,6 @@ test("should update a pet", async () => {
 })
 
 test("should delete a pet", async () => {
-  const petListPage = new PetListPage(page)
   await page.goto(Constants.HOME_URL)
   await homePage.clickOnListPets()
   await expect(page).toHaveTitle(data.petListTitle, { timeout: WAITING_TIME })
