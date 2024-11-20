@@ -3,6 +3,7 @@ import { Authenticator } from "../utils/authenticator"
 import { HomePage } from "../pages/home.page"
 import { PetCreatePage } from "../pages/pet.create.page"
 import { PetListPage } from "../pages/pet.list.page"
+import { PetEditPage } from "../pages/pet.edit.page"
 import { Constants } from "../properties/test.constants"
 import data from "../properties/data.json"
 
@@ -54,6 +55,15 @@ test("should validate pet details are visible in user's pet list", async () => {
   await expect(petListPage.getPetDewormed().first()).toBeVisible()
   await expect(petListPage.getPetSterilized().first()).toBeVisible()
   await expect(petListPage.getPetVaccinated().first()).toBeVisible()
+})
+
+test("should update a pet", async () => {
+  const petListPage = new PetListPage(page)
+  const petEditPage = new PetEditPage(page)
+  await petListPage.clickOnEditButton()
+  await expect(page).toHaveTitle(data.petListTitle, { timeout: WAITING_TIME })
+  await petEditPage.changePetData()
+  await expect(petEditPage.getMessage()).toBeVisible()
 })
 
 test("should delete a pet", async () => {

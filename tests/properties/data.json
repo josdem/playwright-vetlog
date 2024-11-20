@@ -6,7 +6,9 @@
   "petCreateTitle": "Register a Pet",
   "userRegistrationTitle": "Create User",
   "petListTitle": "Listing pets",
+  "petEditTitle": "Edit a Pet",
   "email": "contact@josdem.io",
   "mobile": "1234567890",
-  "petName": "Spooky"
+  "petName": "Spooky",
+  "petNewName": "Cremita"
 }

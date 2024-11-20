@@ -17,6 +17,11 @@ export class PetListPage {
     await element.click()
   }
 
+  async clickOnEditButton(): Promise<void> {
+    const element = this.page.getByTestId("petEditButton")
+    await element.click()
+  }
+
   getMessage() {
     return this.page.getByTestId("petListMessage")
   }
