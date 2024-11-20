@@ -18,7 +18,7 @@ test.beforeAll(async () => {
 
 test("should not register due to wrong information", async ({ page }) => {
   const userPage = new UserPage(page)
-  page.goto(Constants.USER_URL)
+  await page.goto(Constants.USER_URL)
   await expect(page).toHaveTitle(data.userRegistrationTitle, { timeout: WAITING_TIME })
   userPage.fillPhoneNumber()
   await expect(page.getByTestId("usernameErrorLabel")).toBeVisible()
