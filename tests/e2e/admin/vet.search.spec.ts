@@ -23,7 +23,7 @@ test("should search pets by user", async ({ page }) => {
   const homePage = new HomePage(page)
   const vetSearchPage = new VetSearchPage(page)
   const vetListPage = new VetListPage(page)
-  authenticator.login(`${process.env.ADMIN}`, `${process.env.ADMIN_PASSWORD}`)
+  authenticator.login(`${process.env.ADMIN_USERNAME}`, `${process.env.ADMIN_PASSWORD}`)
   await homePage.clickOnSearch()
   await expect(page).toHaveTitle(data.searchTitle, { timeout: WAITING_TIME })
   await vetSearchPage.fillSearchByUser()

@@ -7,6 +7,8 @@ on:
 env:
   VETLOG_USERNAME: ${{ secrets.VETLOG_USERNAME }}
   VETLOG_PASSWORD: ${{ secrets.VETLOG_PASSWORD }}
+  ADMIN_USERNAME: ${{ secrets.ADMIN_USERNAME }}
+  ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
 jobs:
   test:
     timeout-minutes: 60
@@ -22,6 +24,8 @@ jobs:
         run: npx playwright install
       - name: Run Playwright e2e tests
         run: npx playwright test e2e
+      - name: Run Playwright admin e2e tests
+        run: npx playwright test e2e/admin
       - uses: actions/upload-artifact@v3
         if: always()
         with:
