@@ -34,6 +34,14 @@ npx playwright test e2e
 npx playwright show-report
 ```
 
+#### To run admin end-to-end test
+
+```bash
+npx playwright test tests/e2e/admin
+```
+
+#### To a single end-to-end test
+
 ```bash
 npx playwright test tests/e2e/${test-file-name}
 ```
