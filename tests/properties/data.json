@@ -7,8 +7,10 @@
   "userRegistrationTitle": "Create User",
   "petListTitle": "Listing pets",
   "petEditTitle": "Edit a Pet",
+  "searchTitle": "Search by username",
   "email": "contact@josdem.io",
   "mobile": "1234567890",
   "petName": "Spooky",
-  "petNewName": "Cremita"
+  "petNewName": "Cremita",
+  "username": "josdem"
 }

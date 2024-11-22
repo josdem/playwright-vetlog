@@ -24,4 +24,9 @@ export class HomePage {
     const element = this.page.getByRole("link", { name: "List" })
     await element.first().click()
   }
+
+  async clickOnSearch(): Promise<void> {
+    const element = this.page.getByRole("link", { name: "Search" })
+    await element.click()
+  }
 }
