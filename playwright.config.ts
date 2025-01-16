@@ -8,6 +8,9 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: [["html"], ["json", { outputFile: "test-results.json" }]],
   timeout: 60000,
+  expect: { 
+    timeout: 15_000 
+  },
   use: {
     trace: "on-first-retry",
     video: "retain-on-failure",
