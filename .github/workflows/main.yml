@@ -4,6 +4,13 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  workflow_dispatch:
+    inputs:
+      username:
+        description: 'select user'
+        default: ''
+        required: true
+        type: string  
 env:
   VETLOG_USERNAME: ${{ secrets.VETLOG_USERNAME }}
   VETLOG_PASSWORD: ${{ secrets.VETLOG_PASSWORD }}
